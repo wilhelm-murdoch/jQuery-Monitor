@@ -18,7 +18,7 @@ This simply enables the monitoring effect. However, there are a few options you 
 
 	$('img').wiggle('start', {
 		limit: null,
-		interval: 100,
+		interval: 500,
 		onChange: function(from, to, intervalId) {
 			// place code here which does something once a matched element has changed
 		}
@@ -40,4 +40,8 @@ At the moment, you can only stop monitoring an element once a change has taken p
 		}
 	});
 
-This is an experimental plugin, so bear with me. Also, pull requests are always MORE than welcome!
+## Caveats
+
+1. Some versions of IE don't like really small polling intervals. Try to keep the `interval` value no lower than `500` milliseconds.
+2. This is more along the lines of a proof-of-concept plugin, so don't be surprised if it isn't 100% stable in all cases.
+3. This is an experimental plugin, so bear with me. Also, pull requests are always MORE than welcome!
