@@ -16,7 +16,7 @@ To enable monitoring of, say, all `<h3>` header elements within `div#headerWrapp
 
 This simply enables the monitoring effect. However, there are a few options you may include when enabling this plugin:
 
-	$('img').wiggle('start', {
+	$('img').monitor('start', {
 		limit: null,
 		interval: 500,
 		onChange: function(from, to, intervalId) {
